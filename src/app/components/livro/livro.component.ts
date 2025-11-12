@@ -11,6 +11,7 @@ export class LivroComponent {
   //
   //Propriedade Signal()/Input - https://angular.dev/guide/components/inputs#required-inputs
   //Obs.: livro => this.livro().favorito
+  //Obs.: livro => com signal se houver alguma atualização em livro reflete nos components
   livro = input.required<ILivro>();
   //
   //
