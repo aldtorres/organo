@@ -1,6 +1,6 @@
 import { ILivro } from "./components/livro/ILivro";
 
-export const livro: ILivro[] = [
+export const livros: ILivro[] = [
     {
         titulo: "As ondas",
         autoria: "Virginia Woolf",
