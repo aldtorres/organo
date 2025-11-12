@@ -1,2 +1,20 @@
 <p>genero-literario works!</p>
-<app-livro [livro]="livroCorrente"></app-livro>
+<section class="generos">
+    <h3 class="texto-h3-prata">
+        {{generoCorrente().value}}
+    </h3>
+    <span class="linha-detaque linha-detaque--pequena"></span>
+    @if(generoCorrente().livros.length === 0){
+        <div class="texto-sem-livros">
+            <img src="sem-livros.png" alt="Sem sem-livros" />
+            <p>Não há livros</p>
+        </div>
+    }@else{
+        <div class="livros-genero">
+            @for(livroCorrente of generoCorrente().livros; track livroCorrente){
+                <app-livro [livro]="livroCorrente"></app-livro>
+            }
+        </div>
+    }
+</section>
+

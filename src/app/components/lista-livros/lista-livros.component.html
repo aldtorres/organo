@@ -7,3 +7,7 @@
         
     </span>
 </section>
+
+@for(genero of agrupaGeneros; track genero ){
+    <app-genero-literario [generoCorrente]="genero"></app-genero-literario>
+}
