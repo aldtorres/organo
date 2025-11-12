@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IGeneroLiterario, ILivro } from '../livro/ILivro';
 import { map } from 'rxjs';
 
@@ -8,11 +8,17 @@ import { map } from 'rxjs';
   templateUrl: './lista-livros.component.html',
   styleUrl: './lista-livros.component.css'
 })
-export class ListaLivrosComponent {
+export class ListaLivrosComponent implements OnInit {
+
+  //hook onInit
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   agrupaGeneros :IGeneroLiterario[] = [];
 
   livrosPorGenero: Map<string, ILivro[]> = new Map();
+
 
 
 }
