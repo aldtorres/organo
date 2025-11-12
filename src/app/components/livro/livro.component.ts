@@ -9,6 +9,8 @@ import { ILivro } from './ILivro';
 })
 export class LivroComponent {
   //
+  //Propriedade Signal()/Input - https://angular.dev/guide/components/inputs#required-inputs
+  //Obs.: livro => this.livro().favorito
   livro = input.required<ILivro>();
   //
   //
