@@ -75,3 +75,11 @@
 .generos .tecnicos {
   border-bottom: 4px solid #FF8A29;
 }
+
+.drama {
+  background-color: #E8FFFF;
+}
+
+.generos .drama {
+  border-bottom: 4px solid orange;
+}
